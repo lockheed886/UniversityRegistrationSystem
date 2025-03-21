@@ -19,39 +19,16 @@ Follow these steps to run the project on your computer:
 1. **Clone the Repository**  
    Copy this project to your computer by running this command in your terminal:
 git clone https://github.com/your-username/UniversityRegistrationSystem.git
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 (Replace `your-username` with your GitHub username.)
 
 2. **Go to the Project Folder**  
 Move to the project folder by running:
 cd UniversityRegistrationSystem
 
-text
-
-Collapse
-
-Wrap
-
-Copy
-
 3. **Install Required Packages**  
 This project uses Node.js. Install the needed packages by running:
 npm install
 
-text
-
-Collapse
-
-Wrap
-
-Copy
 
 4. **Set Up MongoDB**  
 - Make sure MongoDB is installed on your computer and running.
@@ -63,12 +40,6 @@ Copy
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/studentRegistration
 
-text
-
-Collapse
-
-Wrap
-
 Copy
 - This tells the app which port to use and where to find the MongoDB database.
 
@@ -76,24 +47,12 @@ Copy
 - To add some sample students and courses to the database, run:
 npm run seed
 
-text
-
-Collapse
-
-Wrap
-
 Copy
 - This will add a few students (roll numbers: `12345`, `67890`) and courses (like "Introduction to Programming").
 
 7. **Start the App**  
 Run this command to start the app:
 npm start
-
-text
-
-Collapse
-
-Wrap
 
 Copy
 - The app will start on `http://localhost:3000`. Open this link in your browser.
@@ -132,4 +91,4 @@ If you have any questions or problems, feel free to open an issue on this GitHub
 
 ---
 
-**Made by [Your Name]**
+**Made by [Abdullah]**
