@@ -1,0 +1,177 @@
+/* styles.css */
+body {
+    background-color: #1abc9c; /* Light green background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+/* Form Styling */
+.dashboard-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+select, 
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    max-width: 180px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #16a085;
+    box-shadow: 0 0 5px rgba(22, 160, 133, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    background-color: #16a085; /* Green button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #138d75; /* Slightly darker green on hover */
+}
+
+/* Table Styling */
+.dashboard-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    background-color: #16a085;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dashboard-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Notification Styling */
+.notification {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #333;
+    display: none; /* Hidden by default, shown via JS */
+}
+
+/* Calendar Styling */
+.calendar {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #16a085;
+}
+
+/* Each day's container */
+.calendar .day-schedule {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Day header (e.g., "Monday") */
+.calendar .day-schedule h3 {
+    margin: 0 0 15px;
+    font-size: 1.4em;
+    color: #16a085;
+    text-align: left;
+}
+
+/* Container for courses within a day */
+.calendar .day-schedule .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Individual course box */
+.calendar .day-schedule .course {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.calendar .day-schedule .course:hover {
+    background-color: #c8e6c9;
+}
